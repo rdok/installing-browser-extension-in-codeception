@@ -1,8 +1,11 @@
 modules:
+  enabled:
+      - \Helper\ChromeHelper
   config:
-      WebDriver:
+      \Helper\ChromeHelper:
           browser: 'chrome'
+          url: 'http://www.detectadblock.com/'
           capabilities:
               chromeOptions:
                   args:
-                    - 'load-extension=tests/_envs/chrome/AdBlock'
+                    - 'load-extension=tests/_data/adBlock'

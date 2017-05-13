@@ -14,5 +14,7 @@ chromedriver
 tests/_output/*
 tests/_data/*
 selenium-server-standalone-*
-/tests/_envs/chrome/
 geckodriver
+
+/tests/_envs/chrome/
+/tests/_envs/firefox/

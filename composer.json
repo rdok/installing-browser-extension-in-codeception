@@ -1,12 +1,6 @@
 {
-  "autoload-dev": {
-    "files": [
-      "src/helpers.php"
-    ]
-  },
   "require-dev": {
-    "codeception/codeception": "^2.2",
-    "laravel/homestead": "^5.3"
+    "codeception/codeception": "^2.2"
   },
   "scripts": {
     "post-install-cmd": [
