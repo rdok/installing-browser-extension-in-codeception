@@ -1,0 +1,17 @@
+{
+  "autoload-dev": {
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.2",
+    "laravel/homestead": "^5.3"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "bash scripts/install_selenium.sh",
+      "bash scripts/install_adblockers.sh"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+modules:
+  config:
+      WebDriver:
+          browser: 'chrome'
+          capabilities:
+              chromeOptions:
+                  args:
+                    - 'load-extension=tests/_envs/chrome/AdBlock'
