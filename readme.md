@@ -1,6 +1,6 @@
 ### Installation
 ```bash
-git clone git@github.com:rdok/testing-browsers-extension-with-codeception.git
+git clone https://github.com/rdok/enabling-browser-extension-on-codeception
 cd testing-browsers-extension-with-codeception/
 composer install
 java -jar selenium-server-standalone*
