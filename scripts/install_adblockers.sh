@@ -8,7 +8,7 @@ if [ ! -d $adBlockerFile ]; then
     adBlockerId=gighmmpiobklfepjocnamgkkbiglidom
     mkdir -p $adBlockerFile
 
-    wget "https://clients2.google.com/service/update2/crx?response=redirect&os=mac&arch=x86-64&nacl_arch=x86-64&prod=chromecrx&prodchannel=stable&prodversion=44.0.2403.130&x=id%3D$adBlockerId%26uc" -q -O "$adBlockerId.zip"
+    wget "https://clients2.google.com/service/update2/crx?response=redirect&os=mac&arch=x86-64&nacl_arch=x86-64&prod=chromecrx&prodchannel=stable&prodversion=44.0.2403.130&x=id%3D$adBlockerId%26uc" -O "$adBlockerId.zip"
     unzip -d $adBlockerFile "$adBlockerId.zip"
     rm  -f $adBlockerId.zip
 fi
@@ -25,5 +25,5 @@ adBlockerPlusFile="./tests/_data/adblock-plus.xpi"
 
 if [ ! -f $adBlockerPlusFile ]; then
     echo "Installing adblocker plus for firefox."
-    wget "https://addons.mozilla.org/firefox/downloads/latest/adblock-plus/addon-1865-latest.xpi" -q -O $adBlockerPlusFile
+    wget "https://addons.mozilla.org/firefox/downloads/latest/adblock-plus/addon-1865-latest.xpi" -O $adBlockerPlusFile
 fi
