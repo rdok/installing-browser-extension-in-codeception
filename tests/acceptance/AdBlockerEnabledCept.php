@@ -9,6 +9,6 @@ $I->openNewTab();
 
 $I->amOnUrl('http://www.detectadblock.com/');
 
-$I->wait(99);
+$I->wait(3);
 
 $I->see('You\'re blocking ads');

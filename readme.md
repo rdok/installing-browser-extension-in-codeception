@@ -1,7 +1,7 @@
 ### Installation
 ```bash
-git clone https://github.com/rdok/enabling-browser-extension-on-codeception
-cd testing-browsers-extension-with-codeception/
+git clone https://github.com/rdok/installing-browser-extension-in-codeception
+cd installing-browser-extension-in-codeception
 composer install
 java -jar selenium-server-standalone*
 ./vendor/bin/codecept run --env chrome
